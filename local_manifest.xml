@@ -1,0 +1,26 @@
+<manifest>
+  <remote name="weir" fetch="git+ssh://git@wspr-git.csc.ncsu.edu" />
+
+  <project path="kernel/msm" remote="weir" name="weir/kernel/msm" revision="master"/>
+
+  <remove-project name="platform/build" />
+  <project path="build" remote="weir" name="weir/platform/build" groups="pdk" revision="master" />
+
+  <remove-project name="platform/external/sepolicy" />
+  <project path="external/sepolicy" remote="weir" name="weir/platform/external/sepolicy" groups="pdk" revision="master" />
+
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" remote="weir" name="weir/platform/frameworks/base" revision="master" />
+
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" remote="weir" name="weir/platform/frameworks/native" groups="pdk" revision="master" />
+
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" remote="weir" name="weir/platform/system/netd" groups="pdk" revision="master" />
+
+  <remove-project name="platform/system/core" />
+  <project path="system/core" remote="weir" name="weir/platform/system/core" groups="pdk" revision="master"/>
+
+  <remove-project name="platform/system/extras" />
+  <project path="system/extras" remote="weir" name="weir/platform/system/extras" groups="pdk" revision="master"/>
+</manifest>
