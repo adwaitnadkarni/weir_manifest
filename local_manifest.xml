@@ -1,5 +1,5 @@
 <manifest>
-  <remote name="weir" fetch="git+ssh://git@wspr-git.csc.ncsu.edu" />
+  <remote name="weir" fetch="git://git@github.com:adwaitnadkarni" />
 
   <project path="kernel/msm" remote="weir" name="weir/kernel/msm" revision="master"/>
 
